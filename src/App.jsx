@@ -21,7 +21,7 @@ export default function App(){
   return(
     <Routes>
 
-      <Route path="/trending" element={<Home/>}/>
+      <Route path="/" element={<Home/>}/>
       
       
 
