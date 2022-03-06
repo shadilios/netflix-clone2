@@ -3,11 +3,12 @@ import React from "react";
 import {useState, useEffect} from "react";
 
 import MovieList from "./MovieList";
+import Navbar from "./Navbar";
 
 
 export default function Home(){
 
-const [movies, setMovies] = useState([]);
+const [movie, setMovies] = useState([]);
 
 
 async function getData(){
@@ -33,20 +34,21 @@ async function getData(){
 
   },[])
 
-  console.log(movies);
-
+  
 
   return(
     <>
     <h1>Hello from Home page</h1>
     
+    <Navbar/>
     
+    <div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-between"}}>
 
-    <div>
-      {movies && <MovieList movies ={movies} />}
+      {movie && <MovieList movie={movie} />}
+
     </div>
-
-
+    
+    
     </>
 
 

@@ -1,17 +1,24 @@
 import React from "react";
 
+import Movie from "./Movie";
 
-let MovieList = ({movies}) => {
-  
+
+
+export default function MovieList(props){
+
   return (
     <>
     {
 
-    movies.map(movie => {
+    props.movie.map(element => {
       
 
       return(
-        <h1>{movie.title}</h1>
+        <div key={element.id} >
+        
+        <Movie dataOfMovie={element}/>
+
+        </div>
       )
 
 
@@ -25,4 +32,3 @@ let MovieList = ({movies}) => {
   
 };
 
-export default MovieList;
