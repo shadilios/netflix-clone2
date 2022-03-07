@@ -8,7 +8,7 @@ import Navbar from "./Navbar";
 
 export default function Home(){
 
-const [movie, setMovies] = useState([]);
+const [movies, setMovies] = useState([]);
 
 
 async function getData(){
@@ -44,7 +44,7 @@ async function getData(){
     
     <div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-between"}}>
 
-      {movie && <MovieList movie={movie} />}
+      {movies && <MovieList movies={movies} />}
 
     </div>
     
