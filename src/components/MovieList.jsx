@@ -4,13 +4,14 @@ import Movie from "./Movie";
 
 
 
-export default function MovieList(props){
+export default function MovieList({movies}){
+
 
   return (
     <>
     {
 
-    props.movie.map(element => {
+    movies.map(element => {
       
 
       return(

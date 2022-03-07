@@ -48,7 +48,9 @@ export default function Movie(props){
         </Card.Body>
         </Card>
 
-        {chosenMovie && <ModalMovie show={show} chosenMovie={chosenMovie}  handleClose={handleClose} />}
+        {chosenMovie && <ModalMovie show={show} 
+        movie={props.dataOfMovie}
+        chosenMovie={chosenMovie}  handleClose={handleClose} />}
 
         
      
