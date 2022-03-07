@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import {Routes, Route} from "react-router-dom";
 
 //  pages import
-//test
+//test1
 
 
 
@@ -21,7 +21,8 @@ export default function App(){
   return(
     <Routes>
 
-      <Route path="/trending" element={<Home/>}/>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/getMovies" element={<FavList/>}/>
       
       
 
