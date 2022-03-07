@@ -63,3 +63,4 @@ export default function ModalMovie({ movie, show, handleClose, addToFavList }) {
     </Modal>
   );
 }
+
